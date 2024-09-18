@@ -1,0 +1,912 @@
+
+            <!doctype html>
+            <html lang='en'><head>
+            <meta charset='utf-8' />
+            <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+            <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+            <title>Download Request</title>
+        <script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" type="text/javascript" charset="UTF-8" data-domain-script="c3922e14-e9c5-45ad-af19-28880fac108e" ></script>
+
+<script type="text/javascript" src="https://www.synopsys.com/content/dam/synopsys/util/gdpr/geo_v3.js"></script>
+
+<link rel="stylesheet" href="https://static.cloud.coveo.com/searchui/v2.10085/css/CoveoFullSearch.min.css"/>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<script type="text/javascript" src="/apps/includes/files/jquery.js"></script>
+
+<script type="text/javascript" src="/apps/includes/files/jquery-migrate.js"></script>
+
+<script type="text/javascript" language="JavaScript" src="/apps/includes/mainMenu.js"></script>
+
+<script src="https://assets.adobedtm.com/79b3942b8dfa/3ffc81de78b1/launch-93ea38bc9850.min.js"></script>
+
+<script>
+//Initialize the data layer on the window object 
+window.adobeDataLayer = window.adobeDataLayer || [];
+window.adobeDataLayer.push({
+  event: "page-view",
+  web: {
+  webPageDetails: {
+  name: document.title,
+  url: document.URL.toLowerCase(),
+  siteSection: 'Designware IP',
+  server: window.location.hostname,
+  pageViews: {
+			 value: 1
+
+	   },
+  }
+  },
+  _synopsys:{
+	 web:{
+		webPageDetails:{
+		  webURL: window.location.href,
+		  pageType: 'web page',
+		  siteName: 'synopsys',
+		  pageTitle: document.title
+	   }
+	  }
+   }
+});
+
+// WebSDK push
+function sendClickToAnalytics(uri, clickName, region, type){
+  window.adobeDataLayer.push({
+    event: "click-action",
+    web: {
+      webInteraction: {
+        URL: uri,
+        name: clickName,
+        region: region,
+        type: type,
+        linkClicks: {
+          value: 1,
+        },
+      },
+    },
+  });
+}
+
+// Trigger click events for Right Rail clicks 
+$('.component-railCard').on('click', function(e) {
+ 
+    uri = window.location.href.toLowerCase();
+    clickName = 'Right Rail';
+    region = 'right rail';
+    type = 'other';
+    sendClickToAnalytics(uri, clickName, region, type);
+})
+
+
+$('.nav-items-center, .subNavLinks').on('click', function(e) {
+  var uri = window.location.href.toLowerCase();
+  var clickName = '';
+  var region = '';
+  var type = '';
+
+  if (e.target.nodeName == 'LI') {
+    uri = e.target.children[0].href.toLowerCase();
+    clickName = 'Nav Item - ' + e.target.innerText;
+    region = 'topNav';
+    type = 'other';
+    sendClickToAnalytics(uri, clickName, region, type);
+  }
+});
+
+// Pushes Top Nav Items to Adobe Datalayer
+$('#topNav .nav-items-center > ul > li a').on('click', function(e) {
+  var uri = e.target.href;
+  var clickName = '';
+  var region = '';
+  var type = '';
+
+  clickName = 'Nav Item - ' + e.target.innerText;
+  region = 'topNav';
+  type = 'other';
+  sendClickToAnalytics(uri, clickName, region, type);
+})
+
+// Pushes Top Subnav Items to Adobe DataLayer
+$('.subNavLinks a').on('click', function(e) {
+  var uri = e.target.href;
+  var clickName = '';
+  var region = '';
+  var type = '';
+
+  clickName = 'Nav Item - ' + e.target.innerText;
+  region = 'topNav';
+  type = 'other';
+  sendClickToAnalytics(uri, clickName, region, type);
+});
+
+// Pushes site navigation items to the Adobe Datalayer
+$('#primary_nav_wrap .dropdown-menu a').on('click', function(e) {
+  var uri = e.target.href;
+  var clickName = '';
+  var region = '';
+  var type = '';
+
+  clickName = 'Nav Item - ' + e.target.innerText;
+  region = 'primarySiteNav';
+  type = 'other';
+  sendClickToAnalytics(uri, clickName, region, type);
+});
+
+</script>
+                <link rel='icon' href='https://www.synopsys.com/etc/designs/synopsys/favicon.ico' />
+                <link rel='stylesheet' href='https://static.cloud.coveo.com/searchui/v2.10085/css/CoveoFullSearch.min.css'/>
+                <script type='text/javascript' src='/apps/includes/files/synopsys-headlibs.js'></script>
+                <link rel='stylesheet' type='text/css' href='/apps/includes/files/synopsys-pagelibs.css' />
+            
+            <meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
+<meta name='searchContentType' content='Web Page'/>
+            <script type='text/javascript'>
+            window.onload=function() {  }
+            function setLC(lc) {// SynsLC: EN-US or JA-JP or ZH-CN
+                var expire=new Date();
+                expire.setTime(expire.getTime() + 3600000*24*365*5); // TTL: 5-Years
+                document.cookie='SynsLC='+escape(lc.toUpperCase()) + ';path=/;expires=' + expire.toGMTString();
+                window.location.replace(window.location.href); // refresh the page
+            }
+            </script>
+            <style>.btn-nav { margin-bottom: 10px;} </style>
+        
+                <script type='text/javascript'> _linkedin_data_partner_id = '45250'; </script>
+                <script type='text/javascript'>
+                (function(){
+                var s = document.getElementsByTagName('script')[0];
+                var b = document.createElement('script');
+                b.type = 'text/javascript';b.async = true;
+                b.src = 'https://snap.licdn.com/li.lms-analytics/insight.min.js';
+                s.parentNode.insertBefore(b, s);
+                })();
+                </script>
+                </head><body class='page'><div class='site-wrapper'><div class="topNav aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+
+
+
+  <div id="topNav" class="component-nav-top ">
+    <div class="nav-top-wrapper">
+      <div class="nav-container clearfix">
+        <div class="nav-brand">
+          <a href="https://www.synopsys.com">
+                  <img class="logo " src="https://www.synopsys.com/content/dam/synopsys/logos/synopsys-logo-color.svg" title="Synopsys Home" alt="" style="background: none;">
+          </a>
+        </div>
+        <div class="nav-go-back-wrapper">
+            <a href="#" id="mobile-nav-go-back">Go Back</a>
+        </div>
+        <div class="nav-items-center hidden-xs">
+          <ul>
+            <li data-menu="Solutions">
+              <a href="#" class="">Solutions</a>
+            </li>
+          
+            <li data-menu="Products">
+              <a href="#" class="">Products</a>
+            </li>
+          
+            <li data-menu="Support">
+              <a href="#" class="">Support</a>
+            </li>
+			
+            <li data-menu="News & views">
+              <a href="https://www.synopsys.com/newsroom.html" class="">News &amp; Views</a>
+            </li>	
+			
+            <li data-menu="Company">
+              <a href="#" class="">Company</a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-items-right">
+          <ul>
+            <li class="right-nav-link" id="nav-coveo-search-btn" style="visibility: visible;">
+              <a href="" class="">
+                <span class="visually-hidden">Search Synopsys.com</span>
+                <div class="icon-search"></div>
+              </a>
+            </li>
+            <li class="right-nav-link" id="nav-global-sites-btn">
+              <a href="">
+                <span class="visually-hidden">Global Sites</span>
+                <div class="icon-globe"></div>
+              </a>
+            </li>
+            <li class="right-nav-link" id="nav-mobile-menu-btn">
+              <a href="">
+                <span class="visually-hidden">Menu</span>
+                <div class="icon-mobile-menu"></div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="secondary-nav purple-bottom-border" id="coveo-search-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            
+
+  <section class="component-search clearfix">
+    
+    <div id="searchbox" class="snps-searchbox" data-enable-history="true" data-endpoint="default">
+      <div class="CoveoAnalytics"></div>
+      <script class="CoveoPipelineContext"></script>
+      <div class="CoveoEnhancedPipelineContext"></div>
+      <div class="coveo-tab-section" style="display: none;">
+        <a
+          class="CoveoTab"
+          data-id="All"
+          data-caption="All Content"
+        ></a>
+      </div>
+      <div class="coveo-search-section">
+        <div class="CoveoSearchbox" data-add-search-button='false' data-query-suggest-character-threshold="1" data-placeholder="Search"></div>
+      </div>
+    </div>   
+
+  </section>
+
+
+            <a href="" class="close-button">
+              <div class="icon-caret-up"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="nav-left-wrapper" id="global-sites-wrapper">
+      
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="subNavLinks aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+
+  <div class="component-nav-left secondary-nav simplenav purple-bottom-border">
+
+    <div class="component-nav-left-top">
+      <div class="container">
+        <div class="row">
+          <!-- simple nav Markup-->
+          <div class="col-xs-12">
+            <ul class="nav-left-dropdown">
+              <li class="nav-left-item spacer" data-active="false" data-link="https://www.synopsys.com/ja-jp.html">
+                <a href="https://www.synopsys.com/ja-jp.html">日本語
+                </a>
+              </li>
+            
+              <li class="nav-left-item spacer" data-active="false" data-link="https://www.synopsys.com/zh-cn.html">
+                <a href="https://www.synopsys.com/zh-cn.html">简体中文
+                </a>
+              </li>
+            
+              <li class="nav-left-item spacer" data-active="false" data-link="https://www.synopsys.com/zh-tw.html">
+                <a href="https://www.synopsys.com/zh-tw.html">繁體中文
+                </a>
+              </li>
+            
+            </ul>
+            <a href="" class="close-button">
+              <div class="icon-caret-up"></div>
+            </a>
+          </div>
+          <!-- simple nav Markup end--> 
+           <!-- side nav Markup-->
+          
+           <!-- side nav Markup end-->
+            <!-- split nav Markup-->
+          
+           <!-- split nav Markup end-->
+        </div>
+
+      </div>
+    </div>
+
+    
+
+    
+
+  </div>
+
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+      <div class="nav-left-wrapper" data-menu="Solutions">
+        
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="subNavLinks aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+
+  <div class="component-nav-left secondary-nav simplenav purple-bottom-border">
+
+    <div class="component-nav-left-top">
+      <div class="container">
+        <div class="row">
+          <!-- simple nav Markup-->
+          <div class="col-xs-12">
+            <ul class="nav-left-dropdown">
+              <li class="nav-left-item spacer" data-active="false" data-link="https://www.synopsys.com/solutions/industry.html">
+                <a href="https://www.synopsys.com/solutions/industry.html">Industries
+                </a>
+              </li>
+            
+              <li class="nav-left-item spacer" data-active="false" data-link="https://www.synopsys.com/solutions/technology.html">
+                <a href="https://www.synopsys.com/solutions/technology.html">Technologies
+                </a>
+              </li>
+            </ul>
+            <a href="" class="close-button">
+              <div class="icon-caret-up"></div>
+            </a>
+          </div>
+          <!-- simple nav Markup end--> 
+           <!-- side nav Markup-->
+          
+           <!-- side nav Markup end-->
+            <!-- split nav Markup-->
+          
+           <!-- split nav Markup end-->
+        </div>
+
+      </div>
+    </div>
+
+    
+
+    
+
+  </div>
+
+</div>
+
+    
+</div>
+
+      </div>
+    
+      <div class="nav-left-wrapper" data-menu="Products">
+        
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="subNavLinks aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+
+  <div class="component-nav-left secondary-nav simplenav purple-bottom-border">
+
+    <div class="component-nav-left-top">
+      <div class="container">
+        <div class="row">
+          <!-- simple nav Markup-->
+          <div class="col-xs-12">
+            <ul class="nav-left-dropdown">
+              <li class="nav-left-item spacer" data-active="false" data-link="https://www.synopsys.com/silicon-design.html">
+                <a href="https://www.synopsys.com/silicon-design.html">Silicon Design &amp; Verification
+                </a>
+              </li>
+            
+              <li class="nav-left-item spacer" data-active="false" data-link="https://www.synopsys.com/designware-ip.html">
+                <a href="https://www.synopsys.com/designware-ip.html">Silicon IP
+                </a>
+              </li>
+            
+              <li class="nav-left-item spacer" data-active="false" data-link="https://www.synopsys.com/software-integrity.html">
+                <a href="https://www.synopsys.com/software-integrity.html">Application Security
+                </a>
+              </li>
+            </ul>
+            <a href="" class="close-button">
+              <div class="icon-caret-up"></div>
+            </a>
+          </div>
+          <!-- simple nav Markup end--> 
+           <!-- side nav Markup-->
+          
+           <!-- side nav Markup end-->
+            <!-- split nav Markup-->
+          
+           <!-- split nav Markup end-->
+        </div>
+
+      </div>
+    </div>
+
+    
+
+    
+
+  </div>
+
+</div>
+
+    
+</div>
+
+      </div>
+    
+      <div class="nav-left-wrapper" data-menu="Support">
+        
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="subNavLinks aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+
+  <div class="component-nav-left secondary-nav simplenav purple-bottom-border">
+
+    <div class="component-nav-left-top">
+      <div class="container">
+        <div class="row">
+          <!-- simple nav Markup-->
+          <div class="col-xs-12">
+            <ul class="nav-left-dropdown">
+              <li class="nav-left-item spacer" data-active="false" data-link="https://www.synopsys.com/support.html">
+                <a href="https://www.synopsys.com/support.html">Support Overview
+                </a>
+              </li>
+            
+              <li class="nav-left-item spacer" data-active="false" data-link="https://solvnetplus.synopsys.com/">
+                <a href="https://solvnetplus.synopsys.com/">SolvNetPlus
+                </a>
+              </li>
+            
+              <li class="nav-left-item spacer" data-active="false" data-link="https://www.synopsys.com/support/training.html">
+                <a href="https://www.synopsys.com/support/training.html">Training &amp; Education
+                </a>
+              </li>
+            </ul>
+            <a href="" class="close-button">
+              <div class="icon-caret-up"></div>
+            </a>
+          </div>
+          <!-- simple nav Markup end--> 
+           <!-- side nav Markup-->
+          
+           <!-- side nav Markup end-->
+            <!-- split nav Markup-->
+          
+           <!-- split nav Markup end-->
+        </div>
+
+      </div>
+    </div>
+
+    
+
+    
+
+  </div>
+
+</div>
+
+    
+</div>
+
+      </div>
+    
+      <div class="nav-left-wrapper" data-menu="Company">
+        
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="subNavLinks aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+
+  <div class="component-nav-left secondary-nav simplenav purple-bottom-border">
+
+    <div class="component-nav-left-top">
+      <div class="container">
+        <div class="row">
+          <!-- simple nav Markup-->
+          <div class="col-xs-12">
+            <ul class="nav-left-dropdown">
+              <li class="nav-left-item spacer" data-active="false" data-link="https://www.synopsys.com/company.html">
+                <a href="https://www.synopsys.com/company.html">Company Overview
+                </a>
+              </li>
+            
+              <li class="nav-left-item spacer" data-active="false" data-link="https://www.synopsys.com/company/resources.html">
+                <a href="https://www.synopsys.com/company/resources.html">Resources
+                </a>
+              </li>
+            </ul>
+            <a href="" class="close-button">
+              <div class="icon-caret-up"></div>
+            </a>
+          </div>
+          <!-- simple nav Markup end--> 
+           <!-- side nav Markup-->
+          
+           <!-- side nav Markup end-->
+            <!-- split nav Markup-->
+          
+           <!-- split nav Markup end-->
+        </div>
+
+      </div>
+    </div>
+
+    
+
+    
+
+  </div>
+
+</div>
+
+    
+</div>
+
+      </div>
+    
+
+    <div class="space-bar"></div>
+    <!-- mobile menu -->
+    <div class="nav-left-mobile-wrapper" id="mobile-menu-wrapper">
+      <div class="component-navLeftMobile">
+        
+  <ul>
+    <li>
+      <a href="#" data-menu="Solutions">Solutions</a>
+      <ul class="mobile-secondary-nav">
+        <li>
+          <a href="https://www.synopsys.com/solutions/industry.html">Industries</a>
+        </li>
+      
+        <li>
+          <a href="https://www.synopsys.com/solutions/technology.html">Technologies</a>
+        </li>
+      </ul>
+    </li>
+  
+    <li>
+      <a href="#" data-menu="Products">Products</a>
+      <ul class="mobile-secondary-nav">
+        <li>
+          <a href="https://www.synopsys.com/silicon-design.html">Silicon Design &amp; Verification</a>
+        </li>
+      
+        <li>
+          <a href="https://www.synopsys.com/designware-ip.html">Silicon IP</a>
+        </li>
+      
+        <li>
+          <a href="https://www.synopsys.com/software-integrity.html">Application Security</a>
+        </li>
+      </ul>
+    </li>
+  
+    <li>
+      <a href="#" data-menu="Support">Support</a>
+      <ul class="mobile-secondary-nav">
+        <li>
+          <a href="https://www.synopsys.com/support.html">Support Overview</a>
+        </li>
+      
+        <li>
+          <a href="https://solvnetplus.synopsys.com/">SolvNetPlus</a>
+        </li>
+      
+        <li>
+          <a href="https://www.synopsys.com/support/training.html">Training &amp; Education</a>
+        </li>
+      </ul>
+    </li>
+  
+    <li>
+      <a href="#" data-menu="Company">Company</a>
+      <ul class="mobile-secondary-nav">
+        <li>
+          <a href="https://www.synopsys.com/company.html">Company Overview</a>
+        </li>
+      
+        <li>
+          <a href="https://www.synopsys.com/company/resources.html">Resources</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+      </div>
+    </div>
+  </div>
+  <div id="topNav-fixed-padding"></div>
+</div>
+            <div class='site-content'>
+            <div class='container'>
+            <section class='component-breadcrumb'>
+            <nav id='primary_nav_wrap' class='clearfix'>
+            <ul>
+            <li><a href='https://www.synopsys.com'>Home</a></li>
+<li><a href='https://www.synopsys.com/designware-ip.html'>Synopsys IP</a></li>
+<li><a href='/dw/doc.php/iip/DWC_ARC_EM/ARC_EM_PublicProgrammersReference.pdf'>Programmer's Reference Manual for ARC EM Processors (Public Edition)</a></li>
+
+            </ul>
+            </nav>
+            </section>
+            </div>
+            <div class='container'> <section class='component-page-title'> <h1 class='page-title' style='font-size:24pt'>Programmer's Reference Manual for ARC EM Processors (Public Edition)</h1> </section> </div>
+            <div class='background-component vert-pad-bottom-md'>
+            <div class='container'>
+            <section class='component-column row'>
+            <div class='col-xs-12 col-sm-9'>
+            <div class='background-component vert-pad-top-xs vert-pad-bottom-sm'>
+            <div class='container'>
+            <section class='component-textcomp text-align-left'>
+            <!-- <div class='component-text'> <h2 class='title'> <span class='text-size-normal' style='color: #5A2A82;'>Section or Paper Sub Title</span> </h2> </div> -->
+            <div class='component-text'>
+            
+            <p>
+            <div id='coveo-noindex' hidden> coveo-noindex </div>
+            <div id=document><p class='indexTitle'>Programmer's Reference Manual for ARC EM Processors (Public Edition)</p>
+            <p></p>
+            <p>Please complete the following form then click 'submit' to complete the download.<br/><i>Note: all fields with * are required</i></p>
+            <script src="//online.synopsys.com/js/forms2/js/forms2.min.js"></script>
+            <form id="mktoForm_7270"></form>
+            <script>
+            MktoForms2.loadForm("//online.synopsys.com", "367-MRV-360", 7270, function(form) {
+                /**
+                 * Pushes formSuccess event in Adobe Client Data Layer (ACDL) object.
+                 */
+                const sendFormSuccessEvent = function () {
+                    return new Promise((resolve, reject) => {
+                        window.adobeDataLayer = window.adobeDataLayer || [];
+                        window.adobeDataLayer.push({
+                            event: "formSuccess",
+                            web: {
+                                webPageDetails: {
+                                    URL: window.location.href,
+                                    name: 'DesignWare Datasheet Download',
+                                },
+                            },
+                            _synopsys: {
+                                forms: {
+                                    formName: 'Designware Download Form',
+                                    formType: 'Designware Download Form',
+                                    formSuccess: {
+                                        value: 1,
+                                    },
+                                },
+                            },
+                        });
+                        resolve({ "status": "success" });
+                    });
+                }
+                
+                form.onSuccess(function(vals,followupUrl){
+                    sendFormSuccessEvent();
+                    document.getElementById("docrequest").submit();
+                    return false;
+                });
+
+                // add additional Lamp generated form field and values
+                form.addHiddenFields({
+    "sFDCCampaignID": "7010000000009fP",
+    "sFDCCampaignName": "IP - DesignWare Datasheet Download",
+    "business_area": "IP",
+    "productInterest": "Programmer's Reference Manual for ARC EM Processors (Public Edition)",
+    "campaign_asset": "ARC_EM_PublicProgrammersReference.pdf",
+    "dataSourceURL": "https://www.synopsys.com",
+    "tmp_PIE_ProductCategory": "",
+    "tmp_PIE_ProductFamily": "",
+    "tmp_PIE_ProductGroup": "",
+    "tmp_PIE_ProductName": "",
+    "tmp_PIE_ProductPlatform": "",
+    "tmp_PIE_TechnologyCategory": "",
+    "tracking_code": "",
+    "autoresponderid": 0
+});
+            });
+
+            var checkFlag = true;
+            $("body").keyup(".mktoLabel input", function (e) {
+                e.preventDefault();
+                if (checkFlag == true) {
+                    window.adobeDataLayer = window.adobeDataLayer || [];
+                    window.adobeDataLayer.push({
+                        event: "formInitiation",
+                        web: {
+                            webPageDetails: {
+                                URL: window.location.href,
+                                name: 'DesignWare Datasheet Download',
+                            },
+                        },
+                        _synopsys: {
+                            forms: {
+                                formName: 'Designware Download Form',
+                                formType: 'Designware Download Form',
+                                formInitiations: {
+                                    value: 1,
+                                },
+                            },
+                        },
+                    });
+                }
+                checkFlag = false;
+                return true;
+            });
+
+            </script>
+            <form method='post' name='docrequest' id='docrequest' action='/dw/doc.php/iip/DWC_ARC_EM/ARC_EM_PublicProgrammersReference.pdf'>
+                <input type="hidden" name="transactionid" value=312f55b081d52392ec1eb18ef55c0376>
+            </form>
+            </div></p></div></section></div></div></div><div class='col-xs-12 col-sm-3'><br/>
+
+        <section class='component-railCard'>
+        <div class='flag' style='background-color: #80539c; margin-top:25px;'>
+        <div><span class='text'>Search Tools</span></div>
+        <div class='triangle' style='background: linear-gradient(to right bottom, #80539c 50%, transparent 50%);'></div>
+        </div>
+
+        <div class='component-text'>
+
+        <form class='responsive' method='post' action='/dw/ipsearch.php' style='margin:20px 0 10px 0'>
+            <input type='hidden' name='source_page' value='ARC_EM_PublicProgrammersReference.pdf'>
+            <div class='input-group'>
+            <span class='input-group-addon' style='border-radius:9px 0 0 9px;'>&#x1f50d;</span>
+            <input type='text' class='form-control' style='border-radius:0 9px 9px 0;' name='p' placeholder='Search for IP...'>
+            </div>
+        </form>
+
+        <div class='background-component'>
+            <div class='container'>
+            <section class='component-calltoaction'>
+            <div class='wrapper clearfix fullWidth'>
+            <div class='buttons align-center'>
+                <a class='btn btn-nav btn-default btn-width btn-purple' href='https://www.synopsys.com/dw/emllselector.php' role='button'><span class='inner-text'>Foundation IP Selector</span></a>
+                <a class='btn btn-nav btn-default btn-width btn-purple' href='https://www.synopsys.com/dw/nvmipselector.php' role='button'><span class='inner-text'>Non-Volatile Memory IP Selector</span></a>
+            </div>
+            </div>
+            </section>
+            </div>
+        </div>
+
+        </div>
+        </section>
+
+        
+<section class='component-pageList'><div class='row'><div class='col-xs-12'><h5>More IP Resources</h5><ul id='nav-products' class='pageLinks'><div class='one-column'><li><a href='https://www.synopsys.com/search.html#tab=All&sortCriteria=date%20descending%2Cdate%20ascending&f-contenttype-facet=News%20Release&cf-product-facet=Silicon%20IP'>News</a></li><li><a href='https://www.synopsys.com/designware-ip/videos.html'>Videos</a></li><li><a href='https://www.synopsys.com/search.html#tab=All&sortCriteria=date%20descending%2Cdate%20ascending&f-contenttype-facet=Article&cf-product-facet=Silicon%20IP'>Articles</a></li><li><a href='https://www.synopsys.com/search.html#tab=All&sortCriteria=date%20descending%2Cdate%20ascending&f-contenttype-facet=Success%20Story&cf-product-facet=Silicon%20IP'>Customer Successes</a></li><li><a href='https://www.synopsys.com/search.html#tab=All&sortCriteria=date%20descending%2Cdate%20ascending&f-contenttype-facet=White%20Paper&cf-product-facet=Silicon%20IP'>White Papers</a></li><li><a href='https://www.synopsys.com/search.html#tab=All&sortCriteria=date%20descending%2Cdate%20ascending&f-contenttype-facet=Webinar&cf-product-facet=Silicon%20IP'>Webinars</a></li><li><a href='https://www.synopsys.com/search.html#tab=All&sortCriteria=date%20descending%2Cdate%20ascending&f-contenttype-facet=Blog&cf-product-facet=Silicon%20IP'>Blogs</a></li><li><a href='/designware-ip/technical-bulletin.html'>Synopsys IP Technical Bulletin</a></li><li><a href='/designware-ip/ip-reuse-tool.html'>IP Reuse Tools</a></li><li><a href='/dw/oempartners.php'>IP OEM Partner Program</a></li><li><a href='/dw/mydesignware.php'>myDesignWare Subscriptions</a></li></div></ul></div></div></section>
+</div></section></div></div></div><div class="siteFooter">
+  <footer class="site-footer">
+    <h2 class="offscreen">Footer</h2>
+    <div class="background-component vert-pad-top-md vert-pad-bottom-md">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-lg-4">
+            <div class="row">
+              <div class="col-xs-12 logo-col">
+                <a href="https://www.synopsys.com/">
+          			<img class="logo " src="https://www.synopsys.com/content/dam/synopsys/logos/synopsys-logo-color.svg" alt="Synopsys Home Page" style="background: none;">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-3 col-lg-2">
+            <h3>Products </h3>
+            <ul>
+              <li><a href="https://www.synopsys.com/software-integrity.html">Application Security</a></li>
+            
+              <li><a href="https://www.synopsys.com/designware-ip.html">Semiconductor IP</a></li>
+            
+              <li><a href="https://www.synopsys.com/verification.html">Verification</a></li>
+            
+              <li><a href="https://www.synopsys.com/implementation-and-signoff.html">Design</a></li>
+            
+              <li><a href="https://www.synopsys.com/manufacturing.html">Silicon Engineering</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-6 col-sm-3 col-lg-2">
+            <h3>Resources</h3>
+            <ul>
+              <li><a href="https://www.synopsys.com/solutions.html">Solutions</a></li>
+            
+              <li><a href="https://www.synopsys.com/services.html">Services</a></li>
+            
+              <li><a href="https://www.synopsys.com/support.html">Support</a></li>
+            
+              <li><a href="https://www.synopsys.com/community.html">Community</a></li>
+            
+              <li><a href="https://online.synopsys.com/contact-form-subscription-center.html">Manage Subscriptions</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-6 col-sm-3 col-lg-2 sm-pull-right">
+            <h3>Corporate</h3>
+            <ul>
+              <li><a href="https://www.synopsys.com/company.html">About Us</a></li>
+            
+              <li><a href="https://www.synopsys.com/careers.html">Careers</a></li>
+            
+              <li><a href="https://www.synopsys.com/company/environment-social-governance.html">ESG</a></li>
+            
+              <li><a href="https://www.synopsys.com/careers/inclusion-diversity.html#present">Inclusion &amp; Diversity</a></li>
+            
+              <li><a href="https://investor.synopsys.com/overview/default.aspx">Investor Relations</a></li>
+            
+              <li><a href="https://www.synopsys.com/company/contact-synopsys.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-6 col-sm-3 col-lg-2">
+            <div class="row">
+              <div class="col-xs-12">
+                <h3>Legal</h3>
+                <ul class="list-4">
+                  <li><a href="https://www.synopsys.com/company/legal/privacy-policy.html">Privacy</a></li>
+                
+                  <li><a href="https://www.synopsys.com/company/legal/trademarks-brands.html">Trademarks &amp; Brands</a></li>
+                
+                  <li><a href="https://www.synopsys.com/company/legal/software-integrity.html">Software Integrity Agreements</a></li>
+                </ul>
+              </div>
+              <div class="col-xs-12 hidden-xs">
+                <h3>Follow</h3>
+                <ul class="social-icons clearfix">
+                    <li><a class="icon-twitter" href="https://twitter.com/synopsys" title="Twitter"></a></li>
+                    <li><a class="icon-linkedin" href="https://www.linkedin.com/company/synopsys" title="Linkedin"></a></li>
+                    <li><a class="icon-facebook" href="https://www.facebook.com/Synopsys/" title="Facebook"></a></li>
+                    <li><a class="icon-youtube" href="https://www.youtube.com/user/synopsys" title="Youtube"></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 visible-xs-block clearfix">
+            <h3>Follow</h3>
+            <ul class="social-icons clearfix">
+              <li><a class="icon-twitter" href="https://twitter.com/synopsys" title="Twitter"></a></li>
+              <li><a class="icon-linkedin" href="https://www.linkedin.com/company/synopsys" title="Linkedin"></a></li>
+              <li><a class="icon-facebook" href="https://www.facebook.com/Synopsys/" title="Facebook"></a></li>
+              <li><a class="icon-youtube" href="https://www.youtube.com/user/synopsys" title="Youtube"></a></li>
+            </ul>
+          </div>
+          <div class="col-xs-12 copyright">
+            &copy;2024 Synopsys, Inc. All Rights Reserved
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</div>
+</div><script src="https://static.cloud.coveo.com/searchui/v2.10085/js/CoveoJsSearch.Lazy.min.js"></script>
+
+<script src="https://static.cloud.coveo.com/searchui/v2.10085/js/cultures/en.js"></script>
+<script src="/apps/includes/files/coveo-search-enhanced-pipeline-context.min.js"></script>
+
+<script type="text/javascript" src="/apps/includes/files/synopsys-pagelibs.js"></script>
+
+<script src="https://kit.fontawesome.com/6e227b4cd8.js" crossorigin="anonymous" defer></script>
+</body></html>
